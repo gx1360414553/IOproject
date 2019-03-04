@@ -18,6 +18,8 @@ public class MinaServer {
 
     public static void main(String[] args) {
         try {
+
+
             accept = new NioSocketAcceptor();
             //设置编码过滤器
             accept.getFilterChain().addLast("codec",new ProtocolCodecFilter(
